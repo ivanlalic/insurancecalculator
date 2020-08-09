@@ -1,25 +1,69 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import Header from './components/header';
+import Form from './components/Form';
+import Sum from './components/sum';
+import Result from './components/result';
+import Spinner from './components/Spinner';
+import styled from '@emotion/styled';
+
+const Container = styled.div`
+  max-width: 600px;
+  margin: 0 auto;  
+`;
+
+const FormContainer = styled.div`
+  background-color: #FFF;
+  padding: 3rem;
+`;
+
 
 function App() {
+
+  // State
+  const [sum, setSum] = useState({
+    result: 0,
+    data: {
+      brand: '',
+      year: '',
+      plan: ''
+    }
+  }); // Comes from Form
+
+
+  //state for spinner
+
+  const [loading, setLoading] = useState(false);
+
+  //Extract data
+  const {result, data} = sum;
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Header 
+        title='Insurance Calculator'
+      />
+
+      <FormContainer>
+        <Form 
+          setSum={setSum}
+          setLoading={setLoading}
+        />
+
+        {loading ? <Spinner /> : null}
+
+        <Sum 
+          data={data}
+        />
+
+        { !loading ? 
+        <Result 
+          result={result}
+        /> 
+        : null}
+        
+      </FormContainer>
+    </Container>
   );
 }
 
