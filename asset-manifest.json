@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ivanlalic/insurancecalculator/static/css/main.f7b4118e.chunk.css",
+    "main.js": "/ivanlalic/insurancecalculator/static/js/main.eff3905f.chunk.js",
+    "main.js.map": "/ivanlalic/insurancecalculator/static/js/main.eff3905f.chunk.js.map",
+    "runtime-main.js": "/ivanlalic/insurancecalculator/static/js/runtime-main.2d95dceb.js",
+    "runtime-main.js.map": "/ivanlalic/insurancecalculator/static/js/runtime-main.2d95dceb.js.map",
+    "static/js/2.fc4aec72.chunk.js": "/ivanlalic/insurancecalculator/static/js/2.fc4aec72.chunk.js",
+    "static/js/2.fc4aec72.chunk.js.map": "/ivanlalic/insurancecalculator/static/js/2.fc4aec72.chunk.js.map",
+    "index.html": "/ivanlalic/insurancecalculator/index.html",
+    "precache-manifest.d5a7a75bbe3d86331b9bdb39e9e7f5ee.js": "/ivanlalic/insurancecalculator/precache-manifest.d5a7a75bbe3d86331b9bdb39e9e7f5ee.js",
+    "service-worker.js": "/ivanlalic/insurancecalculator/service-worker.js",
+    "static/css/main.f7b4118e.chunk.css.map": "/ivanlalic/insurancecalculator/static/css/main.f7b4118e.chunk.css.map",
+    "static/js/2.fc4aec72.chunk.js.LICENSE.txt": "/ivanlalic/insurancecalculator/static/js/2.fc4aec72.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2d95dceb.js",
+    "static/js/2.fc4aec72.chunk.js",
+    "static/css/main.f7b4118e.chunk.css",
+    "static/js/main.eff3905f.chunk.js"
+  ]
+}
